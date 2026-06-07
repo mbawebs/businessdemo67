@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Barber Shop | DEMO VISUAL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#090909;
+font-family:'Inter',sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+.demo{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:12px;
+background:#ff2020;
+color:white;
+text-align:center;
+font-weight:800;
+z-index:9999;
+letter-spacing:2px;
+}
+
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:30% 70%;
+}
+
+.left{
+background:#d31111;
+padding:120px 60px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.logo{
+font-family:'Oswald',sans-serif;
+font-size:6rem;
+line-height:.85;
+font-weight:700;
+text-transform:uppercase;
+}
+
+.logo span{
+display:block;
+color:#111;
+-webkit-text-stroke:1px white;
+}
+
+.vertical{
+writing-mode:vertical-rl;
+transform:rotate(180deg);
+font-size:.8rem;
+letter-spacing:6px;
+font-weight:700;
+opacity:.8;
+}
+
+.right{
+padding:120px 8vw;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.big{
+font-family:'Oswald',sans-serif;
+font-size:clamp(5rem,12vw,11rem);
+line-height:.9;
+text-transform:uppercase;
+}
+
+.big span{
+color:#ff2b2b;
+}
+
+.desc{
+font-size:1.1rem;
+line-height:2;
+color:#bdbdbd;
+max-width:700px;
+margin-top:30px;
+}
+
+.card-stack{
+display:grid;
+gap:20px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+padding:35px;
+}
+
+.card small{
+display:block;
+color:#777;
+margin-bottom:8px;
+text-transform:uppercase;
+}
+
+.card strong{
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.marquee{
+background:white;
+color:black;
+padding:25px;
+font-family:'Oswald',sans-serif;
+font-size:2rem;
+white-space:nowrap;
+overflow:hidden;
+}
+
+.marquee div{
+display:inline-block;
+padding-left:100%;
+animation:scroll 18s linear infinite;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
+}
+
+.showcase{
+display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+min-height:700px;
+}
+
+.col{
+padding:60px 40px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.c1{
+background:#0f0f0f;
+}
+
+.c2{
+background:#151515;
+}
+
+.c3{
+background:#ff2020;
+}
+
+.c4{
+background:#1c1c1c;
+}
+
+.col h3{
+font-family:'Oswald',sans-serif;
+font-size:3rem;
+margin-bottom:20px;
+text-transform:uppercase;
+}
+
+.col p{
+line-height:2;
+}
+
+.col.black{
+color:black;
+}
+
+.feature{
+padding:180px 8vw;
+background:white;
+color:black;
+}
+
+.feature-wrap{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:60px;
+align-items:center;
+}
+
+.side-number{
+font-size:12rem;
+font-weight:900;
+color:#ececec;
+line-height:1;
+}
+
+.feature h2{
+font-family:'Oswald',sans-serif;
+font-size:5rem;
+line-height:.95;
+margin-bottom:20px;
+}
+
+.feature p{
+font-size:1.1rem;
+line-height:2;
+max-width:800px;
+}
+
+.cta{
+padding:180px 8vw;
+text-align:center;
+background:#090909;
+}
+
+.cta h2{
+font-family:'Oswald',sans-serif;
+font-size:7rem;
+line-height:.9;
+text-transform:uppercase;
+}
+
+.cta p{
+max-width:800px;
+margin:40px auto;
+line-height:2;
+color:#aaa;
+}
+
+.price{
+font-size:4rem;
+font-weight:900;
+color:#ff2b2b;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#666;
+border-top:1px solid #151515;
+}
+
+@media(max-width:1000px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.left{
+padding:100px 40px;
+}
+
+.right{
+grid-template-columns:1fr;
+}
+
+.showcase{
+grid-template-columns:1fr;
+}
+
+.feature-wrap{
+grid-template-columns:1fr;
+}
+
+.big{
+font-size:4rem;
+}
+
+.cta h2{
+font-size:3rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="demo">
+DEMO VISUAL • NO ES LA PÁGINA OFICIAL • Diseño conceptual
+</div>
+
+<section class="hero">
+
+<div class="left">
+
+<div class="logo">
+RED
+<span>BARBER</span>
+SHOP
+</div>
+
+<div class="vertical">
+JURICA • QUERÉTARO • EST. 2025
+</div>
+
+</div>
+
+<div class="right">
+
+<div>
+
+<div class="big">
+NO ES<br>
+SOLO UN<br>
+<span>CORTE.</span>
+</div>
+
+<p class="desc">
+Red Barber Shop combina estética moderna, imagen urbana y una identidad visual fuerte. Ubicados en Jurica Pueblo, Querétaro, ofrecen una experiencia enfocada en estilo, presencia y comunidad.
+</p>
+
+</div>
+
+<div class="card-stack">
+
+<div class="card">
+<small>Ubicación</small>
+<strong>Calle Camelinas 141<br>Jurica Pueblo, Querétaro</strong>
+</div>
+
+<div class="card">
+<small>Instagram</small>
+<strong>@redbarberqro</strong>
+</div>
+
+<div class="card">
+<small>Servicios</small>
+<strong>Cortes • Barbería • Citas • Productos</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="marquee">
+<div>
+BARBERÍA • ESTILO • COMUNIDAD • RED BARBER SHOP • JURICA • QUERÉTARO • BARBERÍA • ESTILO • COMUNIDAD
+</div>
+</section>
+
+<section class="showcase">
+
+<div class="col c1">
+<h3>Cortes</h3>
+<p>
+Estilos modernos, fades y tendencias actuales adaptadas a cada cliente.
+</p>
+</div>
+
+<div class="col c2">
+<h3>Barberos</h3>
+<p>
+Equipo enfocado en detalle, precisión y atención personalizada.
+</p>
+</div>
+
+<div class="col c3 black">
+<h3>Agenda</h3>
+<p>
+Sistema de citas y atención organizada para una mejor experiencia.
+</p>
+</div>
+
+<div class="col c4">
+<h3>Marca</h3>
+<p>
+Una identidad visual sólida que conecta barbería, comunidad y estilo.
+</p>
+</div>
+
+</section>
+
+<section class="feature">
+
+<div class="feature-wrap">
+
+<div class="side-number">
+2025
+</div>
+
+<div>
+
+<h2>
+UNA BARBERÍA QUE PARECE MARCA.
+</h2>
+
+<p>
+Mientras muchas barberías solo publican fotografías de cortes, Red Barber Shop ya proyecta una identidad visual consistente. Una página profesional puede potenciar aún más esa imagen, centralizando información, reservas, servicios y presencia digital.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+¿TE IMAGINAS TU PÁGINA COMPLETA?
+</h2>
+
+<p>
+Este demo fue creado únicamente para mostrar el potencial visual que una landing page profesional puede aportar a una barbería moderna.
+</p>
+
+<div class="price">
+Landing Pages desde $300 USD
+</div>
+
+</section>
+
+<footer>
+DEMO VISUAL • NO ES LA PÁGINA OFICIAL • Diseño conceptual
+</footer>
+
+</body>
+</html>
